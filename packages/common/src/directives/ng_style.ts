@@ -63,6 +63,7 @@ export class NgStyle implements DoCheck {
     }
   }
 
+  /** @nodoc */
   ngDoCheck() {
     if (this._differ) {
       const changes = this._differ.diff(this._ngStyle!);
